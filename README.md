@@ -1,4 +1,6 @@
 # Joyofquiltingreact
-JoyOfQuilting in React!
-Lets Do This!!
-Hell yeah!
+##JoyOfQuilting in React!
+
+###Lets Do This!!
+
+###Hell yeah!
