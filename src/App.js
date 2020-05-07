@@ -8,11 +8,10 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <header className="App-header">
-
           <h1>Welcome to Joy of Quilting Art!</h1>
           <p> Here's where we'll add more!</p>
-          <Main />
         </header>
+        <Main />
       </div>
     </BrowserRouter>
   );

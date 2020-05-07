@@ -5,7 +5,7 @@ import Footer from './FooterComponent.js';
 //import Contact from './ContactComponent';
 import Commissions from './CommissionsComponent';
 import PreviousWorks from './PreviousWorksComponent';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
     constructor(props) {
