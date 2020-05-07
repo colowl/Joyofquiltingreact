@@ -24,15 +24,12 @@ class Main extends Component {
         return (
             <div>
                 <Header />
-                <BrowserRouter>
-                    <Switch>
-                        <Route path='/home' component={HomePage} />
-                        <Route exact path='/commissions' component={Commissions} />
-                        <Route exact path='/previousworks' component={PreviousWorks} />
-                        <Redirect to='/home' />
-                    </Switch>
-                </BrowserRouter>
-
+                <Switch>
+                    <Route path='/home' component={HomePage} />
+                    <Route exact path='/commissions' component={Commissions} />
+                    <Route exact path='/previousworks' component={PreviousWorks} />
+                    <Redirect to='/home' />
+                </Switch>
                 <Footer />
             </div>
         );
