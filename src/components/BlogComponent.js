@@ -1,10 +1,7 @@
 
 import React from 'react';
-
-//We need to some how get this stuff to plug in to the homecomponent.
 //Do we want this to eventually be a component that pulls from an object of all the blog posts...?
-//It is not currently linked to anything but will eventually get imported to HomeComponent
-
+//This is imported into the HomeComponent
 function Blog(props) {
     return (
         <div className="container">
