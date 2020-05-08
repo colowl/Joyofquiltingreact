@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//will import blog component here
+import Blog from './BlogComponent';
 
 class Home extends Component {
     constructor(props) {
@@ -10,7 +10,8 @@ class Home extends Component {
         return (
             <div>
                 <h1>Home Page Goes Here!</h1>
-                {/*eventually blog will go here*/}
+                {/*blog*/}
+                <Blog />
             </div>
         );
     }
