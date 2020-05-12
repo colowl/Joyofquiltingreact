@@ -5,7 +5,14 @@ import Footer from './FooterComponent.js';
 //import Contact from './ContactComponent';
 import Commissions from './CommissionsComponent';
 import PreviousWorks from './PreviousWorksComponent';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import { Connect } from 'react-redux';
+
+const mapStateToProps = state => {
+    return {
+        //campsites: state.campsites
+    };
+};
 
 class Main extends Component {
     constructor(props) {
