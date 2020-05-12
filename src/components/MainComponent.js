@@ -3,7 +3,7 @@ import Home from './HomeComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent.js';
 //import Contact from './ContactComponent';
-import Commissions from './CommissionsComponent';
+import CommissionsPage from './CommissionsPageComponent';
 import PreviousWorks from './PreviousWorksComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { Connect } from 'react-redux';
@@ -33,7 +33,7 @@ class Main extends Component {
                 <Header />
                 <Switch>
                     <Route path='/home' component={HomePage} />
-                    <Route exact path='/commissions' component={Commissions} />
+                    <Route exact path='/commissions' component={CommissionsPage} />
                     <Route exact path='/previousworks' component={PreviousWorks} />
                     <Redirect to='/home' />
                 </Switch>
