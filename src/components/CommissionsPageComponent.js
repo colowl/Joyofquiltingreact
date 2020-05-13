@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row, Modal, ModalHeader, ModalBody, Form, FormGroup, Input } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const required = val => val && val.length;
@@ -70,7 +70,7 @@ class CommissionsPage extends Component {
                 </Button >
 
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                    <ModalHeader toggle={this.toggleModal}>Submit Comment</ModalHeader>
+                    <ModalHeader toggle={this.toggleModal}>Request More Information</ModalHeader>
                     <ModalBody>
                         <LocalForm onSubmit={values => this.handleSubmit(values)}>
                             <Row className="form-group">
