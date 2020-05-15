@@ -7,9 +7,17 @@ class Header extends Component {
     }
     render() {
         return (
-            <div>
-                <h1>Header Goes Here!</h1>
+           <header className="jumbotron jumbotron-fluid">
+            <div className="container">
+                <div class="row">
+                    <div className="col center centered-text mx-auto header-title">
+                        <h1>The Joy of Quilting Art</h1>
+                        <h2>by Jamie Rowen</h2>
+                    </div>
+                    
+                </div>
             </div>
+        </header>
         );
     }
 }
