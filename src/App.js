@@ -12,9 +12,6 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <div className="App">
-          <header className="App-header">
-            <h1>Welcome to Joy of Quilting Art!</h1>
-          </header>
           <Main />
         </div>
       </BrowserRouter>
