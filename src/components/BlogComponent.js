@@ -1,92 +1,42 @@
-import planning from '../shared/images/planning.jpg';
+import '../App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import { Card, CardImg, CardText, CardBody, CardSubtitle, CardTitle, CardColumns, Button } from 'reactstrap';
 import React from 'react';
 //Do we want this to eventually be a component that pulls from an object of all the blog posts...?
 //This is imported into the HomeComponent
+const baseImgUrl = '../shared/images/';
+
 function Blog(props) {
     return (
+
         <React.Fragment>
             <CardColumns>
                 <Card>
-                    <CardImg top width="100%" src="/assets/256x186.svg" alt="Card image cap" />
+                    <CardImg top width="100%" src={require('../shared/images/planning.jpg')} alt="preparing to cut quilt fabric" />
                     <CardBody>
-                        <CardTitle>Card title</CardTitle>
-                        <CardSubtitle>Card subtitle</CardSubtitle>
-                        <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                        <Button>Button</Button>
+                        <CardTitle><p className="blog-title">The Art of Quilting Art</p></CardTitle>
+                        <CardText className="blog-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est metus, bibendum vel vulputate placerat, molestie vitae tellus. Sed sodales, tortor vel hendrerit eleifend, tortor est dignissim arcu, id condimentum massa mauris vitae nisl. Vivamus tempor tincidunt eros ac varius. Sed venenatis ex dui, sit amet cursus urna pretium vel. In interdum ipsum eu mi laoreet, vel tempor nunc euismod. Proin lobortis lorem a lectus consectetur vestibulum. Nam volutpat pharetra orci. Sed efficitur a dui vitae consectetur. Ut fermentum consectetur odio, nec dictum leo. Nam ipsum ante, faucibus id sem et, semper cursus metus. Donec lorem tellus, lobortis vitae mollis eget, fermentum quis eros. Phasellus at turpis libero. Nulla aliquet eros tortor, eget tempor eros cursus quis. Proin maximus tellus sit amet neque rhoncus consequat.</CardText>
+                        <Button href="https://www.lipsum.com/" color="primary">Read More</Button>
                     </CardBody>
                 </Card>
                 <Card>
-                    <CardImg top width="100%" src="/assets/256x186.svg" alt="Card image cap" />
-                </Card>
-                <Card>
+                    <CardImg top width="100%" src={require('../shared/images/planning.jpg')} alt="preparing to cut quilt fabric" />
                     <CardBody>
-                        <CardTitle>Card title</CardTitle>
-                        <CardSubtitle>Card subtitle</CardSubtitle>
-                        <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-                        <Button>Button</Button>
+                        <CardTitle><p className="blog-title">The Art of Quilting Art</p></CardTitle>
+                        <CardText className="blog-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est metus, bibendum vel vulputate placerat, molestie vitae tellus. Sed sodales, tortor vel hendrerit eleifend, tortor est dignissim arcu, id condimentum massa mauris vitae nisl. Vivamus tempor tincidunt eros ac varius. Sed venenatis ex dui, sit amet cursus urna pretium vel. In interdum ipsum eu mi laoreet, vel tempor nunc euismod. Proin lobortis lorem a lectus consectetur vestibulum. Nam volutpat pharetra orci. Sed efficitur a dui vitae consectetur. Ut fermentum consectetur odio, nec dictum leo. Nam ipsum ante, faucibus id sem et, semper cursus metus. Donec lorem tellus, lobortis vitae mollis eget, fermentum quis eros. Phasellus at turpis libero. Nulla aliquet eros tortor, eget tempor eros cursus quis. Proin maximus tellus sit amet neque rhoncus consequat.</CardText>
+                        <Button href="https://www.lipsum.com/" color="primary">Read More</Button>
                     </CardBody>
                 </Card>
-                <Card body inverse style={{ backgroundColor: '#333', borderColor: '#333' }}>
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                    <Button>Button</Button>
-                </Card>
                 <Card>
-                    <CardImg top width="100%" src="/assets/256x186.svg" alt="Card image cap" />
+                    <CardImg top width="100%" src={require('../shared/images/planning.jpg')} alt="preparing to cut quilt fabric" />
                     <CardBody>
-                        <CardTitle>Card title</CardTitle>
-                        <CardSubtitle>Card subtitle</CardSubtitle>
-                        <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                        <Button>Button</Button>
+                        <CardTitle><p className="blog-title">The Art of Quilting Art</p></CardTitle>
+                        <CardText className="blog-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est metus, bibendum vel vulputate placerat, molestie vitae tellus. Sed sodales, tortor vel hendrerit eleifend, tortor est dignissim arcu, id condimentum massa mauris vitae nisl. Vivamus tempor tincidunt eros ac varius. Sed venenatis ex dui, sit amet cursus urna pretium vel. In interdum ipsum eu mi laoreet, vel tempor nunc euismod. Proin lobortis lorem a lectus consectetur vestibulum. Nam volutpat pharetra orci. Sed efficitur a dui vitae consectetur. Ut fermentum consectetur odio, nec dictum leo. Nam ipsum ante, faucibus id sem et, semper cursus metus. Donec lorem tellus, lobortis vitae mollis eget, fermentum quis eros. Phasellus at turpis libero. Nulla aliquet eros tortor, eget tempor eros cursus quis. Proin maximus tellus sit amet neque rhoncus consequat.</CardText>
+                        <Button href="https://www.lipsum.com/" color="primary">Read More</Button>
                     </CardBody>
-                </Card>
-                <Card body inverse color="primary">
-                    <CardTitle>Special Title Treatment</CardTitle>
-                    <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                    <Button color="secondary">Button</Button>
                 </Card>
             </CardColumns>
-            <div className="container">
-                <div className="row centered-text">
-                    <h1 className="blog-title col-sm-12">The Art of Assembling Art</h1>
-                </div>
-                <div className="row">
-                    <div className="col-sm-12 col-md-5">
-                        <img src={"../img/planning.jpg"} className="img-fluid rounded" />
-                    </div>
-                    <div className="col">
-                        <p className="blog-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est metus, bibendum vel vulputate placerat, molestie vitae tellus. Sed sodales, tortor vel hendrerit eleifend, tortor est dignissim arcu, id condimentum massa mauris vitae nisl. Vivamus tempor tincidunt eros ac varius. Sed venenatis ex dui, sit amet cursus urna pretium vel. In interdum ipsum eu mi laoreet, vel tempor nunc euismod. Proin lobortis lorem a lectus consectetur vestibulum. Nam volutpat pharetra orci. Sed efficitur a dui vitae consectetur. Ut fermentum consectetur odio, nec dictum leo. Nam ipsum ante, faucibus id sem et, semper cursus metus. Donec lorem tellus, lobortis vitae mollis eget, fermentum quis eros. Phasellus at turpis libero. Nulla aliquet eros tortor, eget tempor eros cursus quis. Proin maximus tellus sit amet neque rhoncus consequat.</p>
-                        <a href="https://www.lipsum.com/"><p>Read more...</p></a>
-                    </div>
-                </div>
-                <div className="row centered-text">
-                    <h1 className="blog-title col-sm-12">The Twists and Turns of Quilting</h1>
-                </div>
-                <div className="row">
-                    <div className="col-sm-12 col-md-5">
-                        <img src="img/freestyle.jpg" className="img-fluid rounded" />
-                    </div>
-                    <div className="col">
-
-                        <p className="blog-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est metus, bibendum vel vulputate placerat, molestie vitae tellus. Sed sodales, tortor vel hendrerit eleifend, tortor est dignissim arcu, id condimentum massa mauris vitae nisl. Vivamus tempor tincidunt eros ac varius. Sed venenatis ex dui, sit amet cursus urna pretium vel. In interdum ipsum eu mi laoreet, vel tempor nunc euismod. Proin lobortis lorem a lectus consectetur vestibulum. Nam volutpat pharetra orci. Sed efficitur a dui vitae consectetur. Ut fermentum consectetur odio, nec dictum leo. Nam ipsum ante, faucibus id sem et, semper cursus metus. Donec lorem tellus, lobortis vitae mollis eget, fermentum quis eros. Phasellus at turpis libero. Nulla aliquet eros tortor, eget tempor eros cursus quis. Proin maximus tellus sit amet neque rhoncus consequat.</p>
-                        <a href="https://www.lipsum.com/"><p>Read more...</p></a>
-                    </div>
-                </div>
-                <div className="row centered-text">
-                    <h1 className="blog-title col-sm-12">What To Do With Scraps</h1>
-                </div>
-                <div className="row">
-                    <div className="col-sm-12 col-md-5">
-                        <img src="img/planning.jpg" className="img-fluid rounded" />
-                    </div>
-                    <div className="col">
-                        <p className="blog-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In est metus, bibendum vel vulputate placerat, molestie vitae tellus. Sed sodales, tortor vel hendrerit eleifend, tortor est dignissim arcu, id condimentum massa mauris vitae nisl. Vivamus tempor tincidunt eros ac varius. Sed venenatis ex dui, sit amet cursus urna pretium vel. In interdum ipsum eu mi laoreet, vel tempor nunc euismod. Proin lobortis lorem a lectus consectetur vestibulum. Nam volutpat pharetra orci. Sed efficitur a dui vitae consectetur. Ut fermentum consectetur odio, nec dictum leo. Nam ipsum ante, faucibus id sem et, semper cursus metus. Donec lorem tellus, lobortis vitae mollis eget, fermentum quis eros. Phasellus at turpis libero. Nulla aliquet eros tortor, eget tempor eros cursus quis. Proin maximus tellus sit amet neque rhoncus consequat.</p>
-                        <a href="https://www.lipsum.com/"><p>Read more...</p></a>
-                    </div>
-                </div>
-            </div>
-        </React.Fragment>
+        </React.Fragment >
 
 
     );
