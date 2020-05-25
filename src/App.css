@@ -16,8 +16,9 @@
 
 .blog-title {
   font-family: Sans-serif;
+  font-size: 20px;
   color: black;
-  padding-top: 100px; }
+}
 
 .blog-text {
   font-family: Sans-serif;
