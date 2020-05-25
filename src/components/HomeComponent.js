@@ -9,8 +9,6 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h1>Home Page Goes Here!</h1>
-                {/*blog*/}
                 <Blog />
             </div>
         );
