@@ -12,14 +12,14 @@ class Footer extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-4 col-sm-2">
-                        <head>
+                        
                         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-                        </head>
+                       
                         <h5>Pages</h5>
                         <ul className="list-unstyled">
-                            <li><a href="/index.html">Home</a></li>
-                            <li><a href="/commissions.html">Commissions</a></li>
-                            <li><a href="/works.html">Previous Works</a></li>
+                            <li><a href="/HomeComponent">Home</a></li>
+                            <li><a href="/commissionsPage">Commissions</a></li>
+                            <li><a href="/previousworks">Previous Works</a></li>
                         </ul>
                     </div>
                     <div className="col-6 col-sm-5 text-center">
