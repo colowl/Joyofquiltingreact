@@ -51,12 +51,7 @@ class CommissionsPage extends Component {
                 <div className="container" >
                     <div className="row">
                         <div className="col">
-                            <Breadcrumb>
-                                <BreadcrumbItem><Link to="/previousworks">Previous Works</Link></BreadcrumbItem>
-                                <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                                <BreadcrumbItem active>Commissions</BreadcrumbItem>
-                            </Breadcrumb>
-                            <h2>Contact Us</h2>
+                            <h2>Contact Me</h2>
                             <hr />
                         </div>
                     </div>

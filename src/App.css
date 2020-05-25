@@ -41,4 +41,8 @@
 .fa {
   color: black !important; }
 
- 
+ .works-text {
+   color: gray;
+   font-style: oblique;
+   padding-top: 10px;
+ }
