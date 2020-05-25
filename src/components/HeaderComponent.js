@@ -8,6 +8,7 @@ import {
     Form, FormGroup, Input, Label
 } from 'reactstrap';
 
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -22,7 +23,7 @@ class Header extends Component {
                         <div className="col center centered-text mx-auto header-title">
                             <h1>The Joy of Quilting Art Woot</h1>
                             <h2>by Jamie Rowen</h2>
-                            <img src={"../img/bigbluequilt.jpg"}/>
+                            <img src={require('../shared/images/planning.jpg')} />
                         </div>
 
                     </div>
