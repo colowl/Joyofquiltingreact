@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class Footer extends Component {
     constructor(props) {
         super(props);
@@ -7,10 +8,13 @@ class Footer extends Component {
     }
     render() {
         return (
-            <footer>
+            <footer className="belly">
             <div className="container">
                 <div className="row">
                     <div className="col-4 col-sm-2">
+                        <head>
+                        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+                        </head>
                         <h5>Pages</h5>
                         <ul className="list-unstyled">
                             <li><a href="/index.html">Home</a></li>
@@ -31,9 +35,11 @@ class Footer extends Component {
                     <div className="col-sm-4 col-sm-2 offset-1 text-center">
                         <a role="button" className="btn btn-link" href="mailto:animusfuro@gmail.com"><i
                                 className="fa fa-envelope-o fa-lg text-primary"></i> animusfuro@gmail.com</a>
+                   
                     </div>
                 </div>
             </div>
+            
         </footer>
         );
     }
