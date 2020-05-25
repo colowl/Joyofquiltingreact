@@ -31,5 +31,12 @@
   background: cover;
   
 }
+.belly{
+  background-color: lightgray;
+  background-size:contain;
+  background-position:top;
+  background: cover;
+  
+}
 
  
