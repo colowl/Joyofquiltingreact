@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 10vh;
@@ -19,10 +14,14 @@
   background-image: url(./img/bigbluequilt.jpg);
 }
 
-.App-link {
-  color: #61dafb;
-}
+.blog-title {
+  font-family: Sans-serif;
+  color: black;
+  padding-top: 100px; }
 
+.blog-text {
+  font-family: Sans-serif;
+  color: black; }
 
 .jelly{
   background: url("./img/bigbluequilt.jpg");
