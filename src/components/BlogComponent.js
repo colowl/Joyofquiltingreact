@@ -1,6 +1,6 @@
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Card, CardImg, CardText, CardBody, CardSubtitle, CardTitle, CardColumns, Button } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, Media, CardTitle, CardColumns, Button } from 'reactstrap';
 import React from 'react';
 //Do we want this to eventually be a component that pulls from an object of all the blog posts...?
 //This is imported into the HomeComponent
@@ -10,6 +10,18 @@ function Blog(props) {
     return (
 
         <React.Fragment>
+            <Media>
+
+                <Media body>
+                    <Media left href="#">
+                        <Media object top width="20%" src={require('../shared/images/planning.jpg')} alt="preparing to cut quilt fabric" />
+                    </Media>
+                    <Media heading>
+                        Media heading
+                    </Media>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </Media>
+            </Media>
             <CardColumns>
                 <Card>
                     <CardImg top width="100%" src={require('../shared/images/planning.jpg')} alt="preparing to cut quilt fabric" />
