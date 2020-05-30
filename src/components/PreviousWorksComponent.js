@@ -1,6 +1,6 @@
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Card, CardImg, CardText, CardBody, CardSubtitle, CardTitle, CardColumns, Button } from 'reactstrap';
+import { Card, CardImg, CardBody, CardSubtitle, CardColumns } from 'reactstrap';
 import React, { Component } from 'react';
 
 class PreviousWorks extends Component {
