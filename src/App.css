@@ -1,4 +1,10 @@
-.App {
+ 
+ /*For some reason this isn't showing up...*/
+ a {
+   color: gray;
+ }
+
+ .App {
   text-align: center;
 }
 
@@ -16,8 +22,9 @@
 
 .blog-title {
   font-family: Sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   color: black;
+  padding-top: 20px;
 }
 
 .blog-text {
@@ -46,3 +53,4 @@
    font-style: oblique;
    padding-top: 10px;
  }
+
