@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row, Modal, ModalHeader, ModalBody, Form, FormGroup, Input } from 'reactstrap';
+import { Button, Label, Col, Row, Modal, ModalHeader, ModalBody, Form, FormGroup, Input } from 'reactstrap';
+import Calculation from './CalculationComponent';
 import { Link } from 'react-router-dom';
 
 const required = val => val && val.length;
@@ -30,6 +31,7 @@ class CommissionsPage extends Component {
                 email: false
             }
 
+
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -57,7 +59,7 @@ class CommissionsPage extends Component {
                     </div>
                 </div>
                 <div className="container" >
-                    <h1>Some info about commissions here...</h1>
+                    <Calculation />
                 </div >
 
                 <Button outline
